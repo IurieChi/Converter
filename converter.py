@@ -4,7 +4,9 @@ print("""Select type of conversion:
 '1' From Km to Miles
 '2' From Miles to Km 
 '3' From Foot to Meter
-'4' From Inch to Centimeter""")
+'4' From Meter to Foot
+'5' From Yard to Foot
+'6' From Inch to Centimeter""")
 conver = int(input())
 
 # while conver !=1 or conver !=2:
@@ -24,6 +26,14 @@ elif conver == 3:
         foot = float(input("Type Foot = "))
         foot_to_meter = foot * 0.3048
         print(foot, "foot is", round(foot_to_meter, 2), "meters\n")
+elif conver == 4:
+        meter = float(input("Type Meter = "))
+        meter_to_foot = meter * 3.28084
+        print(meter, "inch is", round(meter_to_foot, 2), "foots\n")
+elif conver == 5:
+        yard = float(input("Type Yard = "))
+        yard_to_meter = yard * 3
+        print(yard, "inch is", round(yard_to_meter, 2), "centimeters\n")
 elif conver == 4:
         inch = float(input("Type Inch = "))
         inch_to_centimeter = inch * 2.54
