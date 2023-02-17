@@ -1,7 +1,10 @@
 This is a simple conversion of distance 
-1 -- from Km to mile 
-2 -- from mile to KM
-3 -- from foot to meter
-4 -- From Meter to Foot
-5 -- From Yard to Foot
-6 -- From Inch to Centimeter
+'1' From kilometer to miles
+'2' From miles to Km 
+'3' From mile to yard
+'4' From mile to foot 
+'5' From foot to meter
+'6' From meter to foot
+'7' From yard to foot
+'8' From inch to centimeter
+'9' From inch to millimetre
