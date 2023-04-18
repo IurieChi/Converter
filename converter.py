@@ -6,10 +6,12 @@ print("""Select type of conversion:
 '3' From mile to yard
 '4' From mile to foot 
 '5' From foot to meter
-'6' From meter to foot
-'7' From yard to foot
-'8' From inch to centimeter
-'9' From inch to millimetre""")
+'6' From feet and inches to meter
+'7' From meter to foot
+'8' From yard to foot
+'9' From inch to centimeter
+'10' From inch to millimetre
+'11' Pounds to Kg""")
 conver = int(input())
 
 
@@ -33,19 +35,26 @@ elif conver == 5:
         foot = float(input("Type Foot = "))
         foot_to_meter = foot * 0.3048
         print(foot, "foot is", round(foot_to_meter, 2), "meter\n")
-elif conver == 6:
-        meter = float(input("Type Meter = "))
-        meter_to_foot = meter * 3.28084
-        print(meter, "meter is", round(meter_to_foot, 2), "foot\n")
+elif conver ==6:
+        ft=float(input("Type Foot = "))
+        inch =float(input("Type inch = "))
+        print(f'{ft} foot and {inch} inch is, {round(ft * 0.3048 + inch * 0.0254, 2)}, meter\n')
 elif conver == 7:
+        meter = float(input("Type Meter = "))
+        meter_to_foot = meter * 3.28084 
+        print(meter, "meter is", round(meter_to_foot, 2), "foot\n")
+elif conver == 8:
         yard = float(input("Type Yard = "))
         yard_to_foot = yard * 3
         print(yard, "yard is", round(yard_to_foot, 2), "foot\n")
-elif conver == 8:
+elif conver == 9:
         inch = float(input("Type Inch = "))
         inch_to_centimeter = inch * 2.54
         print(inch, "inch is", round(inch_to_centimeter, 2), "centimeters\n")
-elif conver == 9:
+elif conver == 10:
         inch = float(input("Type Inch = "))
         inch_to_millimetre = inch * 25.4
         print(inch, "inch is", round(inch_to_millimetre, 2), "millimetre\n")
+elif conver == 11:
+        pound = float(input("Type pound = "))
+        print(pound, "pounds is", round(pound * 0.45359237, 2), "kg\n")
